@@ -58,7 +58,7 @@ def terminal():
         terminal()
     elif intake == "clear":
         import os
-        os.system("cls")
+        os.system("clear")
         terminal()
     elif intake == "cls":
         import os
