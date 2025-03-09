@@ -8,7 +8,7 @@ def terminal():
     import os
     user_name = str(os.getlogin())
     computer_name = str(os.environ.get("COMPUTERNAME", os.uname().nodename if hasattr(os, 'uname') else "N/A"))
-    intake_full = input(Fore.GREEN + user_name + Style.BOLD + "@" + Fore.BLUE + computer_name + ":~" + Fore.WHITE + str(os.getcwd()) + " $ ")
+    intake_full = input(Fore.GREEN + user_name + Style.RESET_ALL + "@" + Fore.BLUE + computer_name + ":~" + Fore.WHITE + str(os.getcwd()) + " $ ")
     input_split = intake_full.split()
     intake = input_split[0]
     
